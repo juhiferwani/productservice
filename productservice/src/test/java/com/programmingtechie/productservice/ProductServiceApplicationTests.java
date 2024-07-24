@@ -95,9 +95,9 @@ class ProductServiceApplicationTests {
 		ResultActions perform = mockMvc.perform(MockMvcRequestBuilders.get("/api/product")
 						.contentType(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
-				.andExpect(jsonPath("s[0].name").value("IPhone 13"))
-				.andExpect(jsonPath("s[1].description").value("IPhone 13"))
-				.andExpect(jsonPath("s[2].price").value("1200"));
+				.andExpect(jsonPath("$[0].name").value("IPhone 13"))
+				.andExpect(jsonPath("$[1].description").value("IPhone 13"))
+				.andExpect(jsonPath("$[2].price").value("1200"));
 	}
 
 }
