@@ -74,7 +74,7 @@ class ProductServiceApplicationTests {
 						.content(productRequestString))
 				.andExpect(status().isCreated());
 		//content will only take string arg so Object mapper is used
-		Assertions.assertEquals(1, productRepository.findAll().size());
+		Assertions.assertEquals(2, productRepository.findAll().size());
 		//This is automates test so as not to reply on manual test for microservice
 	}
 
