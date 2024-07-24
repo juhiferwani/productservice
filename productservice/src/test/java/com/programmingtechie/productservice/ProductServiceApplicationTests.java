@@ -96,8 +96,8 @@ class ProductServiceApplicationTests {
 						.contentType(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
 				.andExpect(jsonPath("$[0].name").value("IPhone 13"))
-				.andExpect(jsonPath("$[1].description").value("IPhone 13"))
-				.andExpect(jsonPath("$[2].price").value("1200"));
+				.andExpect(jsonPath("$[0].description").value("IPhone 13"))
+				.andExpect(jsonPath("$[0].price").value("1200"));
 	}
 
 }
