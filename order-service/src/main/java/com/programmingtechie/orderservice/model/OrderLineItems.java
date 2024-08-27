@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
+//import javax.persistence.*;
+//To remove Not a managed type as javax is new named as jakarta
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
