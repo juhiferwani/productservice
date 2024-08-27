@@ -2,7 +2,9 @@ package com.programmingtechie.orderservice.model;
 
 import lombok.Data;
 
-import javax.persistence.*;
+//import javax.persistence.*;
+//To remove Not a managed type as javax is new named as jakarta
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
